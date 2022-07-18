@@ -1,7 +1,9 @@
 
 <?php
-
-require "./blocks/header.php";
+$title = 'HOME';
+require_once "./blocks/header.php";
+//include "./blocks/header.php";
+//include_once "./blocks/header.php";
 
 ?>
 
@@ -10,5 +12,6 @@ require "./blocks/header.php";
 <?php
 
 require "./blocks/footer.php";
+//require_once "./blocks/footer.php";
 
 ?>
