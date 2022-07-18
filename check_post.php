@@ -14,10 +14,19 @@ else if (strlen(trim($name)) <= 1)
 else if (trim($email) == "" || trim($pass) == "" || trim($_POST['message']) == "")
     echo "invalid data";
 else {
-    echo "<h1> all data</h1>
-<p>$name</p>
-<p>$pass</p>
-<p>$email</p>
-<p>$_POST[message]</p>";
+    $_POST['password'] = md5($pass);
+//    echo "<h1> all data</h1>
+//<p>$name</p>
+//<p>$pass</p>
+//<p>$email</p>
+//<p>$_POST[message]</p>";
+
+
+//    foreach ($_POST as $key => $value)
+//        echo "<p>$key : $value</p>";
+
+header('Location: /firstLaravel/index.php');
+exit;
+
 }
 
